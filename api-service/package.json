@@ -1,0 +1,21 @@
+{
+  "name": "api-service",
+  "version": "0.8.0",
+  "description": "aerostore api service using micro.js",
+  "main": "index.js",
+  "scripts": {
+  	"start": "micro -p ${PORT:-3000}",
+  	"dev": "micro-dev -p ${PORT:-3000}"
+	},
+  "repository": "https://github.com/juandc/aerostore/api-service",
+  "author": "@juandc",
+  "license": "MIT",
+  "dependencies": {
+    "micro": "^9.0.2",
+    "microrouter": "^3.0.0",
+    "node-fetch": "^1.7.3"
+  },
+  "devDependencies": {
+    "micro-dev": "^1.4.0"
+  }
+}

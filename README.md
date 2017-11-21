@@ -14,3 +14,22 @@ The product’s main goal is to help users redeem items through a points-based s
 ## Setup
 This challenge is composed by two services: the **_redesigned_** api service and the web (frontend) service.
 
+### Api
+The [challenge api](https://aerolabchallenge.docs.apiary.io) doesn't have a prodcts category filter, nor specific product url, therefore I have decided to create a new api client for my challenge version.
+
+There is not so much diference between the old api and this api, here are the actions available:
+
+ - GET `/user/profile` -> Access your personal user information
+ - GET `/user/points?amount=amount` -> Add points to your user
+ - GET `/user/history` -> Access your redeem history
+ - GET `/products` -> Check out all the available products with their attributes
+ - GET `/products?category=category_name` -> Filter produts by category
+ - GET `/products/:product_id` -> Check out an specific product
+ - GET `/products/:product_id/redeem` -> Redeem Products
+_* Subject to changes_
+
+**Important:** *The api makes all request using the base api token, security is still being planned.*
+
+### Web
+I just know I will use React.js along with Next.js. No more... D:
+
