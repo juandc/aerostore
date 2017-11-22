@@ -10,7 +10,7 @@ The base UI will not provide a responsive version of the app, its optional to do
 
 The product’s main goal is to help users redeem items through a points-based system. It’s expected the end-product to be both visually attractive and functionally effective.
 
-![AeroChallenge Base UI](.https://github.com/juandc/aerostore/blob/master/base-ui.png)
+![AeroChallenge Base UI](https://github.com/juandc/aerostore/blob/master/base-ui.png)
 
 
 ## Setup
