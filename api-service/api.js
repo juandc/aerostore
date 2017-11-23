@@ -10,13 +10,12 @@ const token = process.env.TOKEN
   the base api token and query methods.
 */
 const api = {
-  // GET requests needs just the token parameter,
-  // doesn’t needs query parameters.
   get: async url => {
     const response = await fetch(`https://aerolab-challenge.now.sh/${url}?token=${token}`)
     const data = await response.json()
     return data
   },
+
   // With POST requests all parameters after the url,
   // will be used as body parameters.
   post: async (url, ...query) => {
@@ -35,15 +34,15 @@ const userApi = {
   getProfile: () => api.get('user/me'),
   getHistory: () => api.get('user/history'),
   addPoints: amount =>
-    // Amount must be reconverted into a number for
-    // don’t be taken as a string but as a number.
+    // Amount arrives as a String, but it
+    // shoud be a number.
     api.post('user/points', { amount: Number(amount) }),
 }
 
 const productApi = {
-  getList: async category => {
+  getList: async categories => {
     const data = await api.get('products')
-    if (!category) return data
+    if (!categories) return data
 
     /*
       HTTP requests use the ampersand symbol (&) as
@@ -51,9 +50,10 @@ const productApi = {
       that’s why application needs to change it for any
       other symbol, in this case the 'and' word.
     */
-    return data.filter(
-      product => product.category.toLowerCase()
-        == category.split('and').join('&').toLowerCase()
+    return data.filter(product =>
+      categories
+        .split(',')
+        .includes(product.category.replace(/&/g, 'and'))
     )
   },
   getSingle: async productId => {

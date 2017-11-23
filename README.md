@@ -25,7 +25,7 @@ There is not so much diference between the old api and this api, here are the ac
  - GET `/user/points?amount=amount` -> Add points to your user
  - GET `/user/history` -> Access your redeem history
  - GET `/products` -> Check out all the available products with their attributes
- - GET `/products?category=category_name` -> Filter produts by category
+ - GET `/products?category=category_name` -> Filter produts by category (separating categories with `,`)
  - GET `/products/:product_id` -> Check out an specific product
  - GET `/products/:product_id/redeem` -> Redeem Products
 _* Subject to changes_
