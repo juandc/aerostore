@@ -28,6 +28,7 @@ There is not so much diference between the old api and this api, here are the ac
  - GET `/products?category=category_name` -> Filter produts by category (separating categories with `,`)
  - GET `/products/:product_id` -> Check out an specific product
  - GET `/products/:product_id/redeem` -> Redeem Products
+
 _* Subject to changes_
 
 **Important:** *The api makes all request using the base api token, security is still being planned.*

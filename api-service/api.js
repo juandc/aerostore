@@ -47,8 +47,9 @@ const productApi = {
     /*
       HTTP requests use the ampersand symbol (&) as
       parameter delimiter: `par1=stuff&par2=morestuff`,
-      that’s why application needs to change it for any
-      other symbol, in this case the 'and' word.
+      that’s why application needs to change the (&)
+      symbol in products category names for any other
+      symbol, in this case the 'and' word.
     */
     return data.filter(product =>
       categories
@@ -58,7 +59,7 @@ const productApi = {
   },
   getSingle: async productId => {
     const data = await api.get('products')
-    return data.filter(product => product._id == productId)
+    return data.find(product => product._id == productId)
   },
   redeemPoints: productId =>
     api.post('redeem', { productId }),

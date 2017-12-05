@@ -1,0 +1,19 @@
+{
+  "name": "aerostore-web-service",
+  "version": "0.8.0",
+  "description": "aerostore web service using next.js",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next"
+  },
+  "repository": "https://github.com/juandc/aerostore/tree/master/web-service",
+  "author": "@juandc",
+  "license": "MIT",
+  "dependencies": {
+    "babel-plugin-styled-components": "^1.3.0",
+    "next": "^4.1.4",
+    "react": "^16.1.1",
+    "react-dom": "^16.1.1",
+    "styled-components": "^2.2.3"
+  }
+}
