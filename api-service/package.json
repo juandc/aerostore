@@ -1,6 +1,6 @@
 {
   "name": "aerostore-api-service",
-  "version": "0.8.2",
+  "version": "0.8.5",
   "description": "aerostore api service using micro.js",
   "main": "index.js",
   "scripts": {

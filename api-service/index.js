@@ -1,47 +1,55 @@
 'use strict'
 
-const { send, json } = require('micro')
+const { send } = require('micro')
 const { router, get } = require('microrouter')
-const { productApi, userApi } = require('./api')
+const { userAPI, categoryAPI } = require('./api')
 
 
 const user = {
   profile: async (req, res) => {
-    const profile = await userApi.getProfile()
+    const profile = await userAPI.getProfile()
     send(res, 200, profile)
   },
   history: async (req, res) => {
-    const history = await userApi.getHistory()
+    const history = await userAPI.getHistory()
     send(res, 200, history)
   },
-  points: async (req, res) => {
-    const newPoints = await userApi.addPoints(req.query.amount)
+  reclaim: async (req, res) => {
+    const newPoints = await userAPI.reclaimPoints(req.query)
     send(res, 200, newPoints)
   },
 }
 
-const product = {
+const category = {
   list: async (req, res) => {
-    const products = await productApi.getList(req.query.category)
+    const products = await categoryAPI.getList(req.params, req.query)
     send(res, 200, products)
   },
   single: async (req, res) => {
-    const product = await productApi.getSingle(req.params.productId)
+    const product = await categoryAPI.getSingle(req.params)
     send(res, 200, product)
   },
   redeem: async (req, res) => {
-    const redeem = await productApi.redeemPoints(req.params.productId)
+    const redeem = await categoryAPI.redeemProduct(req.params.productId)
     send(res, 200, redeem)
   },
 }
 
 
 module.exports = router(
-  get('/user/profile', user.profile),
-  get('/user/history', user.history),
-  get('/user/points', user.points),
-  get('/products', product.list),
-  get('/products/:productId', product.single),
-  get('/products/:productId/redeem', product.redeem),
-  get('*', (req, res) => send(res, 404, 'Not found route')),
+	get('/user/profile', user.profile),
+	get('/user/history', user.history),
+	get('/user/reclaim', user.reclaim),
+	get('/categories/:category', category.list),
+	get('/categories/:category/:productId', category.single),
+	get('/categories/:category/:productId/redeem', category.redeem),
+
+	// No coded routes
+	get('/categories', (req, res) => send(res, 200, ['Electronics'])),
+	get('/*', (req, res) => (
+		send(res, 404, {
+		  "success": false,
+		  "message": 'Failed to get this route'
+		})
+	)),
 )

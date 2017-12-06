@@ -19,15 +19,19 @@ This challenge is composed by two services: the **_redesigned_** api service and
 ### Api
 The [challenge api](https://aerolabchallenge.docs.apiary.io) doesn't have a prodcts category filter, nor specific product url, therefore I have decided to create a new api client for my challenge version.
 
-There is not so much diference between the old api and this api, here are the actions available:
+Considering this is a Frontend challenge (or at least I think it is 😅), I have not created a new DB, with new products, new categories and probably new features...
+The new API features are: SubCategories Filtering and Searching.
+
+
+Anyway, these are the new API entrypoints:
 
  - GET `/user/profile` -> Access your personal user information
- - GET `/user/points?amount=amount` -> Add points to your user
  - GET `/user/history` -> Access your redeem history
- - GET `/products` -> Check out all the available products with their attributes
- - GET `/products?category=category_name` -> Filter produts by category (separating categories with `,`)
- - GET `/products/:product_id` -> Check out an specific product
- - GET `/products/:product_id/redeem` -> Redeem Products
+ - GET `/user/reclaim` -> Add points to your user with the `amount` param
+ - GET `/categories/Electronics` -> Check out all the available products with their attributes,
+ 		you can sort, paginate and filter produts by category.
+ - GET `/categories/Electronics/:productId` -> Take a look to an specific product
+ - GET `/categories/Electronics/:productId/redeem` -> Buy it
 
 _* Subject to changes_
 
