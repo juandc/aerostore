@@ -1,5 +1,6 @@
 'use strict'
 
+const cors = require('micro-cors')
 const { send } = require('micro')
 const { router, get } = require('microrouter')
 const { userAPI, categoryAPI } = require('./api')
@@ -30,26 +31,35 @@ const category = {
     send(res, 200, product)
   },
   redeem: async (req, res) => {
-    const redeem = await categoryAPI.redeemProduct(req.params.productId)
+    const redeem = await categoryAPI.redeemProduct(req.params)
     send(res, 200, redeem)
+  },
+  subcategories: async (req, res) => {
+    const subcategories = await categoryAPI.getSubcategories(req.params)
+    send(res, 200, subcategories)
   },
 }
 
 
-module.exports = router(
-	get('/user/profile', user.profile),
-	get('/user/history', user.history),
-	get('/user/reclaim', user.reclaim),
-	get('/categories/:category', category.list),
-	get('/categories/:category/:productId', category.single),
-	get('/categories/:category/:productId/redeem', category.redeem),
+const handler = router(
+  get('/user/profile', user.profile),
+  get('/user/history', user.history),
+  get('/user/reclaim', user.reclaim),
+  get('/categories/:category', category.list),
+  get('/categories/:category/subcategories', category.subcategories),
+  get('/categories/:category/:productId', category.single),
+  get('/categories/:category/:productId/redeem', category.redeem),
 
-	// No coded routes
-	get('/categories', (req, res) => send(res, 200, ['Electronics'])),
-	get('/*', (req, res) => (
-		send(res, 404, {
-		  "success": false,
-		  "message": 'Failed to get this route'
-		})
-	)),
+  // No coded routes
+  get('/categories', (req, res) => send(res, 200, ['Electronics'])),
+  get('/*', (req, res) => (
+    send(res, 404, {
+      "success": false,
+      "message": 'Failed to get this route'
+    })
+  )),
 )
+
+module.exports = cors({
+  allowMethods: ['GET']
+})(handler)

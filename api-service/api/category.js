@@ -5,7 +5,7 @@ function CategoriesHandler({ get, post }) {
   // Categories Methods are all inside API_CALLS for
   // data interchange and `this` things. You know #JS.
   const API_CALLS = {
-    async getList(params, { categories, sortBy, page, perPage = 16 }) {
+    async getList(params, { categories, sortBy, page, perPage = 16 } = {}) {
       /*
         "params" are not been used because there is just
         one category: "Electronics". In case there would be 
@@ -28,8 +28,8 @@ function CategoriesHandler({ get, post }) {
       }
 
       if (sortBy) {
-        sortBy == 'lowest' && data.sort(LowestCostSorting)
-        sortBy == 'hightest' && data.sort(HightestCostSorting)
+        sortBy === 'lowest' && data.sort(LowestCostSorting)
+        sortBy === 'hightest' && data.sort(HightestCostSorting)
       }
 
       // Pagination must be at the end of data variations.
@@ -54,6 +54,15 @@ function CategoriesHandler({ get, post }) {
 
     redeemProduct({ productId }) {
       return post('redeem', { productId })
+    },
+
+    async getSubcategories({ category, productId }) {
+      const data = await this.getList(category)
+      let categories = []
+      data.map(({ category }) =>
+        !categories.includes(category) && categories.push(category)
+      )
+      return categories
     },
   }
 

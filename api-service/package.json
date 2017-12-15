@@ -12,6 +12,7 @@
   "license": "MIT",
   "dependencies": {
     "micro": "^9.0.2",
+    "micro-cors": "^0.0.4",
     "microrouter": "^3.0.0",
     "node-fetch": "^1.7.3"
   },
