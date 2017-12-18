@@ -20,23 +20,26 @@ This challenge is composed by two services: the **_redesigned_** api service and
 The [challenge api](https://aerolabchallenge.docs.apiary.io) doesn't have a prodcts category filter, nor specific product url, therefore I have decided to create a new api client for my challenge version.
 
 Considering this is a Frontend challenge (or at least I think it is 😅), I have not created a new DB, with new products, new categories and probably new features...
-The new API features are: SubCategories Filtering and Searching.
+The new API features are: subcategories, filtering and searching.
 
 
 Anyway, these are the new API entrypoints:
 
- - GET `/user/profile` -> Access your personal user information
- - GET `/user/history` -> Access your redeem history
- - GET `/user/reclaim` -> Add points to your user with the `amount` param
- - GET `/categories/Electronics` -> Check out all the available products with their attributes,
- 		you can sort, paginate and filter produts by category.
- - GET `/categories/Electronics/:productId` -> Take a look to an specific product
- - GET `/categories/Electronics/:productId/redeem` -> Buy it
+ - **GET** `/user/profile` -> Access your personal user information
+ - **GET** `/user/history` -> Access your redeem history
+ - **GET** `/user/reclaim` -> Add points to your user with the `amount` param
+ - **GET** `/categories/Electronics` -> Check out all the available products with their attributes, you can sort, paginate and filter produts by category.
+ - **GET** `/categories/Electronics/subcategories` -> All Electronics products subcategories
+ - **GET** `/categories/Electronics/:productId` -> Take a look to an specific product
+ - **GET** `/categories/Electronics/:productId/redeem` -> Buy it
 
 _* Subject to changes_
 
 **Important:** *The api makes all request using the base api token, security is still being planned.*
 
 ### Web
-I just know I will use React.js along with Next.js. No more... D:
+Libraries:
+	- React.js
+	- Next.js
+	- PostCSS
 
