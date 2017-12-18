@@ -13,7 +13,7 @@
   "license": "MIT",
   "dependencies": {
     "isomorphic-fetch": "^2.2.1",
-    "next": "^4.2.1",
+    "next": "4.1.4",
     "postcss-nested": "^3.0.0",
     "prop-types": "^15.6.0",
     "react": "^16.2.0",

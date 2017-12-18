@@ -18,7 +18,6 @@ const Page = (props) => {
 					{...product}
 				/>
 			)}
-			{props.sorts.map(sort => console.log(sort))}
 			{props.sorts.map(sort =>
 				<Category
 					blue
@@ -82,7 +81,7 @@ Page.getInitialProps = async ({
 	let subcategories = await fetch(`${baseUrl}/categories/Electronics/subcategories`)
 	subcategories = await subcategories.json()
 
-	let products = await fetch(`${baseUrl}/categories/Electronics?page=${page}&perPage=${perPage}&categories=${activeSubcategories.replace(/&/g, 'and')}&sortBy=${sortBy}`)
+	let products = await fetch(`${baseUrl}/categories/Electronics?page=${page}&perPage=${perPage}&categories=${activeSubcategories}&sortBy=${sortBy}`)
 	products = await products.json()
 
 
@@ -117,12 +116,12 @@ const Category = ({ name, blue, isActive, ...props }) => (
 				cursor: pointer;
 				display: flex;
 				font-size: 14px;
-				min-height: 31px;
 				justify-content: center;
 				margin: 0 12px 18px 0;
+				min-height: 31px;
+				min-width: 100px;
 				padding: 7px 18px;
 				text-align: center;
-				min-width: 100px;
 
 				&:hover, &.active {
 					background-color: var(--orange);
@@ -137,8 +136,6 @@ const Category = ({ name, blue, isActive, ...props }) => (
 )
 
 const FilterCategories = (props, category) => {
-	console.log(category)
-	// category = category.replace(/&/g, 'and')
 	let active = props.activeSubcategories || ''
 	active = active.split(',')
 

@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 
 export default ({ name, category, cost, img, userPoints }) => (
-	<div>
+	<div className="Product">
 		<img src={img.url} alt={name} />
 		{userPoints >= cost
 			? <span className="bag" />
@@ -21,7 +21,7 @@ export default ({ name, category, cost, img, userPoints }) => (
 		)}
 
 		<style jsx>{`
-			div {
+			.Product {
 				background-color: #fff;
 				background-color: var(--bgSecondColor);
 				border-radius: 4px;
@@ -35,15 +35,11 @@ export default ({ name, category, cost, img, userPoints }) => (
 				position: relative;
 				width: 200px;
 				margin-bottom: 12px;
+				transform: scale(.95);
+				margin: 0 12px 12px 0;
 
 				&:hover {
 					.hover { opacity: 1; z-index: 1; }
-				}
-
-
-				@media screen and (max-width: 1024px) {
-					transform: scale(.95);
-					margin: 0 12px 12px 0;
 				}
 			}
 
@@ -113,8 +109,8 @@ export default ({ name, category, cost, img, userPoints }) => (
 			}
 
 			.price {
-				color: var(--bgSecondColor);
-				font-size: 22px;
+				color: #FFF;
+				font-size: 24px;
 				font-weight: bold;
 				position: absolute;
 				top: calc(50% - 36px);

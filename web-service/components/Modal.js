@@ -7,13 +7,17 @@ export default class Modal extends React.Component {
 		}))
 	}
 
-	renderModal = ({ isOpen, render, posButton }) => (
+	renderModal = ({ isOpen, render, buttons = {} }) => (
 		<article className={isOpen && 'active'}>
 			{render}
 			<footer>
 				<button
 					className="btn btn-blue"
-					onClick={() => this.toggleModal()}
+					onClick={() => {
+						buttons.action
+							&& buttons.action()
+						this.toggleModal()
+					}}
 				>Ok</button>
 			</footer>
 			<style jsx>{`
@@ -29,6 +33,7 @@ export default class Modal extends React.Component {
 					top: 61px;
 					width: 100vw;
 					transition: all .3s, padding .1s, height .6s;
+					z-index: 1;
 
 					@media screen and (min-width: 1024px) {
 						left: unset;
@@ -64,7 +69,7 @@ export default class Modal extends React.Component {
 					background-color: var(--bgColor);
 					box-shadow: 0px -2px 24px var(--boxShadow);
 					display: flex;
-					justify-content: ${posButton};
+					justify-content: ${buttons.position || 'center'};
 					height: 61px;
 					position: absolute;
 					bottom: 0;
@@ -95,7 +100,11 @@ export default class Modal extends React.Component {
 
 	render() {
 		const { isOpen } = this.state
-		const { modalHandler, render, posButton = 'center' } = this.props
+		const {
+			modalHandler,
+			render,
+			buttons,
+		} = this.props
 
 		return (
 			<React.Fragment>
@@ -104,7 +113,7 @@ export default class Modal extends React.Component {
 					toggleModal: () => this.toggleModal()
 				})}
 
-				{this.renderModal({ isOpen, render, posButton })}
+				{this.renderModal({ isOpen, render, buttons })}
 			</React.Fragment>
 		)
 	}

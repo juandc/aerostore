@@ -59,7 +59,7 @@ export default class Home extends React.Component {
 				
 				<section>
 					<h2>Other Electronics</h2>
-					<Link href={`/shop?category=Other+Electronics`}>
+					<Link href={`/shop?category=Other+Electronics&sortBy=lowest`}>
 						<a className="btn btn-small btn-blue">SEE MORE</a>
 					</Link>
 					<article>
