@@ -1,0 +1,11 @@
+{
+  "name": "aerostore-api-service",
+  "alias": "aerostore-api.now.sh",
+  "type": "npm",
+  "env": {
+    "NODE_ENV": "production",
+    "PORT": "8080",
+    "BASE_URL": "@aerostore_base_url",
+    "TOKEN": "@aerostore_token"
+  }
+}

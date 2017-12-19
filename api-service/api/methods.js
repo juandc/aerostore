@@ -3,8 +3,8 @@
 const fetch = require('node-fetch')
 
 const TOKEN = process.env.TOKEN
-const BASE_URL = process.env.NODE_ENV == 'production'
-  ? 'https://aerolab-challenge.now.sh'
+const BASE_URL = process.env.NODE_ENV === 'production'
+  ? process.env.BASE_URL
   : 'https://private-anon-e16b67fe63-aerolabchallenge.apiary-proxy.com'
   // || 'https://private-anon-e16b67fe63-aerolabchallenge.apiary-mock.com'
 
