@@ -5,7 +5,7 @@ import Product from '../components/Product'
 
 export default class History extends React.Component {
   static async getInitialProps({ req, res, query }) {
-    const baseUrl = 'http://localhost:8080'
+    const baseUrl = 'https://aerostore-api.now.sh'
     const page = parseInt(query.page || 0)
     let data = {}
 

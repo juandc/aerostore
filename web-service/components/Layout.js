@@ -26,7 +26,7 @@ const UserModal = ({ theme, changeTheme, userProfile }) => (
             </div>
           </article>
           <div>
-            <Link href="/history"><a className="btn btn-big">View History</a></Link>
+            <Link href="/history" prefetch><a className="btn btn-big">View History</a></Link>
           </div>
           <section>
             <h3>Settings</h3>
@@ -146,7 +146,7 @@ export default class Layout extends React.Component {
       title,
       description,
       userProfile,
-      children
+      children,
     } = this.props
     const { theme } = this.state
 

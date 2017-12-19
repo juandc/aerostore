@@ -4,34 +4,62 @@ import Product from '../components/Product'
 import Link from 'next/link'
 
 
-export default class Home extends React.Component {
-  static async getInitialProps({ query }) {
-    const baseUrl = 'http://localhost:8080'
-    const page = parseInt(query.page || 0)
-    let data = {}
+export default class Home extends React.PureComponent {
+  state = {
+    products: null,
+    products2: null,
+    userProfile: {
+      name: 'Name',
+      points: 0,
+    },
+  }
 
-    const userProfile = await fetch(`${baseUrl}/user/profile`)
-    data.userProfile = await userProfile.json()
 
-    const products =
-      await fetch(`${baseUrl}/categories/Electronics?page=0&perPage=5`)
-    data.products = await products.json()
+  requestData = async () => {
+    const baseUrl = 'https://aerostore-api.now.sh'
 
-    const products2 =
-      await fetch(`${baseUrl}/categories/Electronics?page=0&perPage=5&sortBy=lowest`)
-    data.products2 = await products2.json()
+    let userProfile = await fetch(`${baseUrl}/user/profile`)
+    userProfile = await userProfile.json()
 
-    return { data, page }
+    let products = await fetch(`${baseUrl}/categories/Electronics?page=0&perPage=5`)
+    products = await products.json()
+
+    let products2 = await fetch(`${baseUrl}/categories/Electronics?page=0&perPage=5&sortBy=lowest`)
+    products2 = await products2.json()
+
+    this.setState({ userProfile, products, products2 })
+  }
+
+  registerServiceWorker = () => {
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker
+        .register('/service-worker.js')
+        .then(registration => {
+          console.log('service worker registration successful')
+        })
+        .catch(err => {
+          console.warn('service worker registration failed', err.message)
+        })
+    }
+  }
+
+  async componentDidMount() {
+    await this.requestData()
+    this.registerServiceWorker()
   }
 
 
   render() {
-    const { data } = this.props
+    const {
+      products,
+      products2,
+      userProfile,
+    } = this.state
 
     return (
       <Layout
         title="Home"
-        userProfile={data.userProfile}
+        userProfile={userProfile}
       >
         <header>
           <div>
@@ -46,26 +74,29 @@ export default class Home extends React.Component {
         
         <section>
           <h2>Electronics</h2>
-          <Link href={`/shop?category=Electronics`}>
+          <Link href={`/shop?category=Electronics`} prefetch>
             <a className="btn btn-small btn-blue">SEE MORE</a>
           </Link>
           <article>
-            {data.products.map(({ id, ...product }) =>
-              <Product key={id} {...product} userPoints={1000} />
-              // <Product key={id} {...product} userPoints={data.userProfile.points} />
+            {products && products.map(({ id, ...product }) =>
+              <Product
+                key={id}
+                userPoints={userProfile.points}
+                {...product}
+              />
             )}
           </article>
         </section>
         
         <section>
-          <h2>Other Electronics</h2>
-          <Link href={`/shop?category=Other+Electronics&sortBy=lowest`}>
+          <h2>Other</h2>
+          <Link href={`/shop?category=Other&sortBy=lowest`} prefetch>
             <a className="btn btn-small btn-blue">SEE MORE</a>
           </Link>
           <article>
-            {data.products2.map(({ id, ...product }) =>
+            {products2 && products2.map(({ id, ...product }) =>
               <Product key={id} {...product} userPoints={1000} />
-              // <Product key={id} {...product} userPoints={data.userProfile.points} />
+              // <Product key={id} {...product} userPoints={userProfile.points} />
             )}
           </article>
         </section>
@@ -133,6 +164,10 @@ export default class Home extends React.Component {
               right: 0;
               top: 0;
               margin: 0;
+            }
+
+            @media screen and (min-width: 1366px) {
+              max-width: 1048px;
             }
           }
 

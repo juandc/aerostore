@@ -315,7 +315,7 @@ Page.getInitialProps = async({
   ]
 
   // Fetching logic
-  const baseUrl = 'http://localhost:8080'
+  const baseUrl = 'https://aerostore-api.now.sh'
 
   let userProfile = await fetch(`${baseUrl}/user/profile`)
   userProfile = await userProfile.json()
