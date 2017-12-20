@@ -13,8 +13,7 @@ class History extends React.Component {
     const userProfile = await fetch(`${baseUrl}/user/profile`)
     data.userProfile = await userProfile.json()
 
-    const history =
-      await fetch(`${baseUrl}/user/history`)
+    const history = await fetch(`${baseUrl}/user/history`)
     data.history = await history.json()
 
     return { data, page }

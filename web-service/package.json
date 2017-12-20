@@ -1,6 +1,6 @@
 {
   "name": "aerostore-web-service",
-  "version": "0.9.1",
+  "version": "0.9.3",
   "description": "aerostore web service using next.js",
   "main": "server.js",
   "scripts": {

@@ -20,9 +20,9 @@ class MyDocument extends Document {
           <meta name="apple-mobile-web-app-status-bar-style" content="default" />
           <meta name="theme-color" content="#ff6600" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+          <link rel="apple-touch-icon" href="/static/images/icon.webp" />
+          <link rel="shortcut icon" href="/static/images/icon.webp" />
           <link rel="manifest" href="/static/manifest.webmanifest" />
-          <link rel="shortcut icon" href="/static/icon.png" />
-          <link rel="apple-touch-icon" href="/static/icon.png" />
           <title>Aerostore</title>
         </Head>
         <body>

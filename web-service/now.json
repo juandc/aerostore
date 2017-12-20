@@ -1,0 +1,5 @@
+{
+  "name": "aerostore-web-service",
+  "alias": "aerostore.now.sh",
+  "type": "npm"
+}
