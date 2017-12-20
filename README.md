@@ -1,5 +1,5 @@
 # AeroStore
-AeroStore - Aerolab Challenge
+AeroStore - Aerolab Challenge ([demo](https://aerostore.now.sh))
 
 
 ## About
@@ -28,7 +28,7 @@ Anyway, these are the new API entrypoints:
  - **GET** `/user/profile` -> Access your personal user information
  - **GET** `/user/history` -> Access your redeem history
  - **GET** `/user/reclaim` -> Add points to your user with the `amount` param
- - **GET** `/categories/Electronics` -> Check out all the available products with their attributes, you can sort, paginate and filter produts by category.
+ - **GET** `/categories/Electronics` -> Check out all the available products with their attributes. You can sort, paginate and filter produts by category.
  - **GET** `/categories/Electronics/subcategories` -> All Electronics products subcategories
  - **GET** `/categories/Electronics/:productId` -> Take a look to an specific product
  - **GET** `/categories/Electronics/:productId/redeem` -> Buy it
@@ -37,9 +37,22 @@ _* Subject to changes_
 
 **Important:** *The api makes all request using the base api token, security is still being planned.*
 
+
 ### Web
 Libraries:
-	- React.js
-	- Next.js
-	- PostCSS
+
+ - React.js
+ - Next.js
+ - PostCSS
+
+Features:
+
+ - PWA (100% PWA, 91% Performance, 97% Accessibility, 94% Best Practices)
+ - Offline support
+ - Dark theme (storage listeners)
+
+TODOS:
+
+ - Product Redeem
+ - Shop Search filter
 

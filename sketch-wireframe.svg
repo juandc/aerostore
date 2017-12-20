@@ -1,0 +1,789 @@
+<svg width="2088" height="3954" viewBox="0 0 2088 3954" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>Aerolab Challenge Redesign</title>
+<desc>Created using Figma</desc>
+<g id="Canvas">
+<rect x="0" y="0" width="2088" height="3954" fill="#EBEDED"/>
+<clipPath id="clip-0" clip-rule="evenodd">
+<path d="M 1064 2588L 2088 2588L 2088 3954L 1064 3954L 1064 2588Z" fill="#FFFFFF"/>
+</clipPath>
+<g id="History" clip-path="url(#clip-0)">
+<path d="M 1064 2588L 2088 2588L 2088 3954L 1064 3954L 1064 2588Z" fill="#FFFFFF"/>
+<g id="day">
+<g id="Rectangle">
+<use xlink:href="#path0_fill" transform="translate(1585 3693)" fill="#C4C4C4"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path0_fill" transform="translate(1377 3693)" fill="#C4C4C4"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path0_fill" transform="translate(1170 3693)" fill="#C4C4C4"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path1_fill" transform="translate(1170 3626)" fill="#C4C4C4"/>
+</g>
+</g>
+<g id="day">
+<g id="Rectangle">
+<use xlink:href="#path0_fill" transform="translate(1170 3357)" fill="#C4C4C4"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path0_fill" transform="translate(1792 3149)" fill="#C4C4C4"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path0_fill" transform="translate(1585 3149)" fill="#C4C4C4"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path0_fill" transform="translate(1377 3149)" fill="#C4C4C4"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path0_fill" transform="translate(1170 3149)" fill="#C4C4C4"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path2_fill" transform="translate(1170 3082)" fill="#C4C4C4"/>
+</g>
+</g>
+<g id="day">
+<g id="Rectangle">
+<use xlink:href="#path0_fill" transform="translate(1792 2813)" fill="#C4C4C4"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path0_fill" transform="translate(1585 2813)" fill="#C4C4C4"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path0_fill" transform="translate(1377 2813)" fill="#C4C4C4"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path0_fill" transform="translate(1170 2813)" fill="#C4C4C4"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path3_fill" transform="translate(1170 2746)" fill="#C4C4C4"/>
+</g>
+</g>
+<g id="nav">
+<g id="Rectangle">
+<use xlink:href="#path4_fill" transform="translate(1064 2588)" fill="#E0E0E0"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path5_fill" transform="translate(2028 2610)" fill="#BDBDBD"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path5_fill" transform="translate(1970 2610)" fill="#BDBDBD"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path6_fill" transform="translate(1170 2612)" fill="#BDBDBD"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path7_fill" transform="translate(1088 2603)" fill="#BDBDBD"/>
+</g>
+</g>
+</g>
+<clipPath id="clip-1" clip-rule="evenodd">
+<path d="M 0 2588L 1024 2588L 1024 3954L 0 3954L 0 2588Z" fill="#FFFFFF"/>
+</clipPath>
+<g id="User modal" clip-path="url(#clip-1)">
+<path d="M 0 2588L 1024 2588L 1024 3954L 0 3954L 0 2588Z" fill="#FFFFFF"/>
+<g id="category">
+<g id="Rectangle">
+<use xlink:href="#path8_fill" transform="translate(986 3578)" fill="#C4C4C4"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path8_fill" transform="translate(766 3578)" fill="#C4C4C4"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path8_fill" transform="translate(546 3578)" fill="#C4C4C4"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path8_fill" transform="translate(326 3578)" fill="#C4C4C4"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path8_fill" transform="translate(106 3578)" fill="#C4C4C4"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path9_fill" transform="translate(838 3521)" fill="#C4C4C4"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path3_fill" transform="translate(106 3521)" fill="#C4C4C4"/>
+</g>
+</g>
+<g id="category">
+<g id="Rectangle">
+<use xlink:href="#path8_fill" transform="translate(986 3221)" fill="#C4C4C4"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path8_fill" transform="translate(766 3221)" fill="#C4C4C4"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path8_fill" transform="translate(546 3221)" fill="#C4C4C4"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path8_fill" transform="translate(326 3221)" fill="#C4C4C4"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path8_fill" transform="translate(106 3221)" fill="#C4C4C4"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path9_fill" transform="translate(838 3164)" fill="#C4C4C4"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path3_fill" transform="translate(106 3164)" fill="#C4C4C4"/>
+</g>
+</g>
+<g id="hero">
+<g id="Rectangle">
+<use xlink:href="#path10_fill" transform="translate(378.387 2767)" fill="#BDBDBD"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path11_fill" transform="translate(378.387 2947.54)" fill="#E0E0E0"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path12_fill" transform="translate(353 2890.04)" fill="#E0E0E0"/>
+</g>
+</g>
+<g id="nav">
+<g id="Rectangle">
+<use xlink:href="#path4_fill" transform="translate(0 2588)" fill="#E0E0E0"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path5_fill" transform="translate(964 2610)" fill="#BDBDBD"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path5_fill" transform="translate(906 2610)" fill="#BDBDBD"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path6_fill" transform="translate(106 2612)" fill="#BDBDBD"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path7_fill" transform="translate(24 2603)" fill="#BDBDBD"/>
+</g>
+</g>
+<g id="modal">
+<g id="Rectangle" filter="url(#filter0_d)">
+<use xlink:href="#path13_fill" transform="translate(600 2667)" fill="#FFFFFF"/>
+</g>
+<g id="sorting">
+<g id="Rectangle">
+<use xlink:href="#path14_fill" transform="translate(908 3053)" fill="#DEDEDE"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path15_fill" transform="translate(909 3053)" fill="#BDBDBD"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path16_fill" transform="translate(638 3053)" fill="#C4C4C4"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path17_fill" transform="translate(630 3000)" fill="#C4C4C4"/>
+</g>
+</g>
+<g id="profile">
+<g id="Rectangle 2.2">
+<use xlink:href="#path18_fill" transform="translate(726 2879)" fill="#C4C4C4"/>
+</g>
+<g id="Rectangle 2.1">
+<use xlink:href="#path19_fill" transform="translate(829 2789)" fill="#C4C4C4"/>
+</g>
+<g id="Rectangle 2.2">
+<use xlink:href="#path20_fill" transform="translate(822 2751)" fill="#C4C4C4"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path21_fill" transform="translate(686 2731)" fill="#C4C4C4"/>
+</g>
+</g>
+</g>
+</g>
+<clipPath id="clip-2" clip-rule="evenodd">
+<path d="M 1064 1024L 2088 1024L 2088 2390L 1064 2390L 1064 1024Z" fill="#FFFFFF"/>
+</clipPath>
+<g id="Electronics" clip-path="url(#clip-2)">
+<path d="M 1064 1024L 2088 1024L 2088 2390L 1064 2390L 1064 1024Z" fill="#FFFFFF"/>
+<g id="products">
+<g id="Rectangle">
+<use xlink:href="#path0_fill" transform="translate(1792 2165)" fill="#C4C4C4"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path0_fill" transform="translate(1581 2165)" fill="#C4C4C4"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path0_fill" transform="translate(1370 2165)" fill="#C4C4C4"/>
+</g>
+</g>
+<g id="products">
+<g id="Rectangle">
+<use xlink:href="#path0_fill" transform="translate(1792 1936)" fill="#C4C4C4"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path0_fill" transform="translate(1581 1936)" fill="#C4C4C4"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path0_fill" transform="translate(1370 1936)" fill="#C4C4C4"/>
+</g>
+</g>
+<g id="products">
+<g id="Rectangle">
+<use xlink:href="#path0_fill" transform="translate(1792 1707)" fill="#C4C4C4"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path0_fill" transform="translate(1581 1707)" fill="#C4C4C4"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path0_fill" transform="translate(1370 1707)" fill="#C4C4C4"/>
+</g>
+</g>
+<g id="pagination">
+<g id="Rectangle">
+<use xlink:href="#path22_fill" transform="translate(1922 1593)" fill="#C4C4C4"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path22_fill" transform="translate(1851 1593)" fill="#E0E0E0"/>
+</g>
+</g>
+<g id="search bar">
+<g id="Rectangle">
+<use xlink:href="#path23_fill" transform="translate(1698.99 1584)" fill="#CCCCCC"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path24_fill" transform="translate(1370 1584)" fill="#E0E0E0"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path25_fill" transform="translate(1444.71 1609)" fill="#BDBDBD"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path26_fill" transform="translate(1391.9 1609)" fill="#BDBDBD"/>
+</g>
+</g>
+<g id="filters">
+<g id="Rectangle">
+<use xlink:href="#path27_fill" transform="translate(1370 1543)" fill="#C4C4C4"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path28_fill" transform="translate(1871 1456)" fill="#C4C4C4"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path28_fill" transform="translate(1727 1456)" fill="#C4C4C4"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path28_fill" transform="translate(1582 1456)" fill="#C4C4C4"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path29_fill" transform="translate(1370 1456)" fill="#C4C4C4"/>
+</g>
+</g>
+<g id="categories">
+<g id="Rectangle">
+<use xlink:href="#path30_fill" transform="translate(1170 1545)" fill="#C4C4C4"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path31_fill" transform="translate(1170 1599)" fill="#C4C4C4"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path32_fill" transform="translate(1170 1653)" fill="#C4C4C4"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path33_fill" transform="translate(1170 1707)" fill="#C4C4C4"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path34_fill" transform="translate(1170 1761)" fill="#C4C4C4"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path35_fill" transform="translate(1170 1815)" fill="#C4C4C4"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path36_fill" transform="translate(1170 1869)" fill="#C4C4C4"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path37_fill" transform="translate(1170 1923)" fill="#C4C4C4"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path29_fill" transform="translate(1170 1456)" fill="#C4C4C4"/>
+</g>
+</g>
+<g id="hero">
+<g id="rectangle">
+<use xlink:href="#path38_fill" transform="translate(1065 1104)" fill="#BDBDBD"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path6_fill" transform="translate(1170 1315)" fill="#E0E0E0"/>
+</g>
+</g>
+<g id="nav">
+<g id="Rectangle">
+<use xlink:href="#path4_fill" transform="translate(1064 1024)" fill="#E0E0E0"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path5_fill" transform="translate(2028 1046)" fill="#BDBDBD"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path5_fill" transform="translate(1970 1046)" fill="#BDBDBD"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path6_fill" transform="translate(1170 1048)" fill="#BDBDBD"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path7_fill" transform="translate(1088 1039)" fill="#BDBDBD"/>
+</g>
+</g>
+</g>
+<clipPath id="clip-3" clip-rule="evenodd">
+<path d="M 0 1024L 1024 1024L 1024 2390L 0 2390L 0 1024Z" fill="#FFFFFF"/>
+</clipPath>
+<g id="Landing" clip-path="url(#clip-3)">
+<path d="M 0 1024L 1024 1024L 1024 2390L 0 2390L 0 1024Z" fill="#FFFFFF"/>
+<g id="category">
+<g id="Rectangle">
+<use xlink:href="#path8_fill" transform="translate(986 2014)" fill="#C4C4C4"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path8_fill" transform="translate(766 2014)" fill="#C4C4C4"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path8_fill" transform="translate(546 2014)" fill="#C4C4C4"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path8_fill" transform="translate(326 2014)" fill="#C4C4C4"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path8_fill" transform="translate(106 2014)" fill="#C4C4C4"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path9_fill" transform="translate(838 1957)" fill="#C4C4C4"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path3_fill" transform="translate(106 1957)" fill="#C4C4C4"/>
+</g>
+</g>
+<g id="category">
+<g id="Rectangle">
+<use xlink:href="#path8_fill" transform="translate(986 1657)" fill="#C4C4C4"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path8_fill" transform="translate(766 1657)" fill="#C4C4C4"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path8_fill" transform="translate(546 1657)" fill="#C4C4C4"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path8_fill" transform="translate(326 1657)" fill="#C4C4C4"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path8_fill" transform="translate(106 1657)" fill="#C4C4C4"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path9_fill" transform="translate(838 1600)" fill="#C4C4C4"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path3_fill" transform="translate(106 1600)" fill="#C4C4C4"/>
+</g>
+</g>
+<g id="hero">
+<g id="Rectangle">
+<use xlink:href="#path10_fill" transform="translate(378.387 1203)" fill="#BDBDBD"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path11_fill" transform="translate(378.387 1383.54)" fill="#E0E0E0"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path12_fill" transform="translate(353 1326.04)" fill="#E0E0E0"/>
+</g>
+</g>
+<g id="nav">
+<g id="Rectangle">
+<use xlink:href="#path4_fill" transform="translate(0 1024)" fill="#E0E0E0"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path5_fill" transform="translate(964 1046)" fill="#BDBDBD"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path5_fill" transform="translate(906 1046)" fill="#BDBDBD"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path6_fill" transform="translate(106 1048)" fill="#BDBDBD"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path7_fill" transform="translate(24 1039)" fill="#BDBDBD"/>
+</g>
+</g>
+</g>
+<clipPath id="clip-4" clip-rule="evenodd">
+<path d="M 1660 0L 2035 0L 2035 812L 1660 812L 1660 0Z" fill="#FFFFFF"/>
+</clipPath>
+<g id="History" clip-path="url(#clip-4)">
+<path d="M 1660 0L 2035 0L 2035 812L 1660 812L 1660 0Z" fill="#FFFFFF"/>
+<g id="day">
+<g id="Rectangle">
+<use xlink:href="#path39_fill" transform="translate(1691 582)" fill="#C4C4C4"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path39_fill" transform="translate(1854 415)" fill="#C4C4C4"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path39_fill" transform="translate(1691 415)" fill="#C4C4C4"/>
+</g>
+<g id="date">
+<use xlink:href="#path40_fill" transform="translate(1691 364)" fill="#E0E0E0"/>
+</g>
+</g>
+<g id="day">
+<g id="Rectangle">
+<use xlink:href="#path39_fill" transform="translate(1854 166)" fill="#C4C4C4"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path39_fill" transform="translate(1691 166)" fill="#C4C4C4"/>
+</g>
+<g id="date">
+<use xlink:href="#path41_fill" transform="translate(1691 115)" fill="#E0E0E0"/>
+</g>
+</g>
+<g id="nav">
+<g id="Rectangle">
+<use xlink:href="#path42_fill" transform="translate(1660 0)" fill="#E0E0E0"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path41_fill" transform="translate(1674 24)" fill="#BDBDBD"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path15_fill" transform="translate(1946 24)" fill="#BDBDBD"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path15_fill" transform="translate(1990 24)" fill="#BDBDBD"/>
+</g>
+</g>
+</g>
+<clipPath id="clip-5" clip-rule="evenodd">
+<path d="M 1245 0L 1620 0L 1620 812L 1245 812L 1245 0Z" fill="#FFFFFF"/>
+</clipPath>
+<g id="User modal" clip-path="url(#clip-5)">
+<path d="M 1245 0L 1620 0L 1620 812L 1245 812L 1245 0Z" fill="#FFFFFF"/>
+<g id="footer copy of the nav">
+<g id="Rectangle">
+<use xlink:href="#path42_fill" transform="translate(1245 733)" fill="#E0E0E0"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path43_fill" transform="translate(1377 752)" fill="#BDBDBD"/>
+</g>
+</g>
+<g id="sorting">
+<g id="Rectangle">
+<use xlink:href="#path14_fill" transform="translate(1537 449)" fill="#DEDEDE"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path15_fill" transform="translate(1538 449)" fill="#BDBDBD"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path16_fill" transform="translate(1267 449)" fill="#C4C4C4"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path17_fill" transform="translate(1259 396)" fill="#C4C4C4"/>
+</g>
+</g>
+<g id="profile">
+<g id="Rectangle 2.2">
+<use xlink:href="#path18_fill" transform="translate(1358 275)" fill="#C4C4C4"/>
+</g>
+<g id="Rectangle 2.1">
+<use xlink:href="#path19_fill" transform="translate(1461 185)" fill="#C4C4C4"/>
+</g>
+<g id="Rectangle 2.2">
+<use xlink:href="#path20_fill" transform="translate(1454 147)" fill="#C4C4C4"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path21_fill" transform="translate(1318 127)" fill="#C4C4C4"/>
+</g>
+</g>
+<g id="copy of the nav :D">
+<g id="Rectangle">
+<use xlink:href="#path42_fill" transform="translate(1245 0)" fill="#E0E0E0"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path41_fill" transform="translate(1259 24)" fill="#BDBDBD"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path15_fill" transform="translate(1575 24)" fill="#BDBDBD"/>
+</g>
+</g>
+</g>
+<clipPath id="clip-6" clip-rule="evenodd">
+<path d="M 830 0L 1205 0L 1205 812L 830 812L 830 0Z" fill="#FFFFFF"/>
+</clipPath>
+<g id="Filters modal" clip-path="url(#clip-6)">
+<path d="M 830 0L 1205 0L 1205 812L 830 812L 830 0Z" fill="#FFFFFF"/>
+<g id="footer copy of the nav">
+<g id="Rectangle">
+<use xlink:href="#path42_fill" transform="translate(830 733)" fill="#E0E0E0"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path43_fill" transform="translate(1080 752)" fill="#BDBDBD"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path43_fill" transform="translate(957 752)" fill="#BDBDBD"/>
+</g>
+</g>
+<g id="sorting">
+<g id="Rectangle">
+<use xlink:href="#path44_fill" transform="translate(1064 451)" fill="#DEDEDE"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path45_fill" transform="translate(967 451)" fill="#DEDEDE"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path16_fill" transform="translate(852 451)" fill="#E0E0E0"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path16_fill" transform="translate(1084 402)" fill="#DEDEDE"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path16_fill" transform="translate(968 402)" fill="#DEDEDE"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path16_fill" transform="translate(852 400)" fill="#C4C4C4"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path46_fill" transform="translate(1021 353)" fill="#BDBDBD"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path47_fill" transform="translate(852 353)" fill="#E0E0E0"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path16_fill" transform="translate(1084 305)" fill="#DEDEDE"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path16_fill" transform="translate(968 304)" fill="#DEDEDE"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path16_fill" transform="translate(852 306)" fill="#C4C4C4"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path17_fill" transform="translate(844 249)" fill="#C4C4C4"/>
+</g>
+</g>
+<g id="sorting">
+<g id="Rectangle">
+<use xlink:href="#path16_fill" transform="translate(1084 170)" fill="#DEDEDE"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path16_fill" transform="translate(968 170)" fill="#DEDEDE"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path16_fill" transform="translate(852 170)" fill="#C4C4C4"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path17_fill" transform="translate(844 115)" fill="#C4C4C4"/>
+</g>
+</g>
+<g id="copy of the nav :D">
+<g id="Rectangle">
+<use xlink:href="#path42_fill" transform="translate(830 0)" fill="#E0E0E0"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path41_fill" transform="translate(844 24)" fill="#BDBDBD"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path15_fill" transform="translate(1160 24)" fill="#BDBDBD"/>
+</g>
+</g>
+</g>
+<clipPath id="clip-7" clip-rule="evenodd">
+<path d="M 415 0L 790 0L 790 812L 415 812L 415 0Z" fill="#FFFFFF"/>
+</clipPath>
+<g id="Electronics" clip-path="url(#clip-7)">
+<path d="M 415 0L 790 0L 790 812L 415 812L 415 0Z" fill="#FFFFFF"/>
+<g id="products">
+<g id="Rectangle">
+<use xlink:href="#path48_fill" transform="translate(610 651)" fill="#C4C4C4"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path48_fill" transform="translate(435 651)" fill="#C4C4C4"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path48_fill" transform="translate(610 475)" fill="#C4C4C4"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path48_fill" transform="translate(435 475)" fill="#C4C4C4"/>
+</g>
+</g>
+<g id="search bar">
+<g id="Rectangle">
+<use xlink:href="#path49_fill" transform="translate(684.392 368)" fill="#CCCCCC"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path50_fill" transform="translate(429 368)" fill="#E0E0E0"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path51_fill" transform="translate(487 393)" fill="#BDBDBD"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path52_fill" transform="translate(446 393)" fill="#BDBDBD"/>
+</g>
+</g>
+<g id="filter btn">
+<g id="Rectangle">
+<use xlink:href="#path49_fill" transform="translate(684.392 269)" fill="#E0E0E0"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path50_fill" transform="translate(429 269)" fill="#E0E0E0"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path51_fill" transform="translate(487 294)" fill="#BDBDBD"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path52_fill" transform="translate(446 294)" fill="#BDBDBD"/>
+</g>
+</g>
+<g id="hero">
+<g id="Rectangle">
+<use xlink:href="#path53_fill" transform="translate(415 79)" fill="#BDBDBD"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path41_fill" transform="translate(446 195)" fill="#E0E0E0"/>
+</g>
+</g>
+<g id="nav">
+<g id="Rectangle">
+<use xlink:href="#path42_fill" transform="translate(415 0)" fill="#E0E0E0"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path41_fill" transform="translate(429 24)" fill="#BDBDBD"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path15_fill" transform="translate(701 24)" fill="#BDBDBD"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path15_fill" transform="translate(745 24)" fill="#BDBDBD"/>
+</g>
+</g>
+</g>
+<clipPath id="clip-8" clip-rule="evenodd">
+<path d="M 0 0L 375 0L 375 812L 0 812L 0 0Z" fill="#FFFFFF"/>
+</clipPath>
+<g id="Landing" clip-path="url(#clip-8)">
+<path d="M 0 0L 375 0L 375 812L 0 812L 0 0Z" fill="#FFFFFF"/>
+<g id="category">
+<g id="Rectangle">
+<use xlink:href="#path54_fill" transform="translate(346 675)" fill="#C4C4C4"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path54_fill" transform="translate(180 675)" fill="#C4C4C4"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path54_fill" transform="translate(14 675)" fill="#C4C4C4"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path9_fill" transform="translate(281 626)" fill="#C4C4C4"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path55_fill" transform="translate(14 626)" fill="#C4C4C4"/>
+</g>
+</g>
+<g id="category">
+<g id="Rectangle">
+<use xlink:href="#path54_fill" transform="translate(346 436)" fill="#C4C4C4"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path54_fill" transform="translate(180 436)" fill="#C4C4C4"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path54_fill" transform="translate(14 436)" fill="#C4C4C4"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path9_fill" transform="translate(281 387)" fill="#C4C4C4"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path55_fill" transform="translate(14 387)" fill="#C4C4C4"/>
+</g>
+</g>
+<g id="hero">
+<g id="Rectangle">
+<use xlink:href="#path56_fill" transform="translate(88 150)" fill="#BDBDBD"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path57_fill" transform="translate(88 285)" fill="#E0E0E0"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path58_fill" transform="translate(69 242)" fill="#E0E0E0"/>
+</g>
+</g>
+<g id="nav">
+<g id="Rectangle">
+<use xlink:href="#path42_fill" fill="#E0E0E0"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path15_fill" transform="translate(286 24)" fill="#BDBDBD"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path15_fill" transform="translate(330 24)" fill="#BDBDBD"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path41_fill" transform="translate(14 24)" fill="#BDBDBD"/>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<filter id="filter0_d" filterUnits="userSpaceOnUse" x="594" y="2663" width="416" height="498" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 255 0"/>
+<feOffset dx="2" dy="4"/>
+<feGaussianBlur stdDeviation="4"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+</filter>
+<path id="path0_fill" d="M 0 24C 0 10.7452 10.7452 0 24 0L 166 0C 179.255 0 190 10.7452 190 24L 190 166C 190 179.255 179.255 190 166 190L 24 190C 10.7452 190 0 179.255 0 166L 0 24Z"/>
+<path id="path1_fill" d="M 0 4C 0 1.79086 1.79086 0 4 0L 192 0C 194.209 0 196 1.79086 196 4L 196 29C 196 31.2091 194.209 33 192 33L 4 33C 1.79086 33 0 31.2091 0 29L 0 4Z"/>
+<path id="path2_fill" d="M 0 4C 0 1.79086 1.79086 0 4 0L 168 0C 170.209 0 172 1.79086 172 4L 172 29C 172 31.2091 170.209 33 168 33L 4 33C 1.79086 33 0 31.2091 0 29L 0 4Z"/>
+<path id="path3_fill" d="M 0 4C 0 1.79086 1.79086 0 4 0L 161 0C 163.209 0 165 1.79086 165 4L 165 29C 165 31.2091 163.209 33 161 33L 4 33C 1.79086 33 0 31.2091 0 29L 0 4Z"/>
+<path id="path4_fill" d="M 0 0L 1024 0L 1024 79L 0 79L 0 0Z"/>
+<path id="path5_fill" d="M 0 18C 0 8.05888 8.05888 0 18 0C 27.9411 0 36 8.05888 36 18C 36 27.9411 27.9411 36 18 36C 8.05888 36 0 27.9411 0 18Z"/>
+<path id="path6_fill" d="M 0 0L 153 0L 153 31L 0 31L 0 0Z"/>
+<path id="path7_fill" d="M 0 0L 70 0L 70 49L 0 49L 0 0Z"/>
+<path id="path8_fill" d="M 0 24C 0 10.7452 10.7452 0 24 0L 176 0C 189.255 0 200 10.7452 200 24L 200 176C 200 189.255 189.255 200 176 200L 24 200C 10.7452 200 0 189.255 0 176L 0 24Z"/>
+<path id="path9_fill" d="M 0 4C 0 1.79086 1.79086 0 4 0L 76 0C 78.2091 0 80 1.79086 80 4L 80 29C 80 31.2091 78.2091 33 76 33L 4 33C 1.79086 33 0 31.2091 0 29L 0 4Z"/>
+<path id="path10_fill" d="M 0 4C 0 1.79086 1.79086 0 4 0L 263.227 0C 265.436 0 267.227 1.79086 267.227 4L 267.227 96.3012C 267.227 98.5104 265.436 100.301 263.227 100.301L 4.00001 100.301C 1.79087 100.301 0 98.5103 0 96.3012L 0 4Z"/>
+<path id="path11_fill" d="M 0 4C 0 1.79086 1.79086 0 4 0L 263.227 0C 265.436 0 267.227 1.79086 267.227 4L 267.227 37.4578C 267.227 39.667 265.436 41.4578 263.227 41.4578L 4.00001 41.4578C 1.79087 41.4578 0 39.667 0 37.4578L 0 4Z"/>
+<path id="path12_fill" d="M 0 4C 0 1.79086 1.79086 0 4 0L 314 0C 316.209 0 318 1.79086 318 4L 318 37.4578C 318 39.667 316.209 41.4578 314 41.4578L 4 41.4578C 1.79086 41.4578 0 39.667 0 37.4578L 0 4Z"/>
+<path id="path13_fill" d="M 0 0L 400 0L 400 482L 0 482L 0 0Z"/>
+<path id="path14_fill" d="M 0 15.5C 0 6.93959 6.93959 0 15.5 0L 46.5 0C 55.0604 0 62 6.93959 62 15.5C 62 24.0604 55.0604 31 46.5 31L 15.5 31C 6.93959 31 0 24.0604 0 15.5Z"/>
+<path id="path15_fill" d="M 0 15.5C 0 6.93959 6.93959 0 15.5 0C 24.0604 0 31 6.93959 31 15.5C 31 24.0604 24.0604 31 15.5 31C 6.93959 31 0 24.0604 0 15.5Z"/>
+<path id="path16_fill" d="M 0 12C 0 5.37258 5.37258 0 12 0L 88 0C 94.6274 0 100 5.37258 100 12L 100 19C 100 25.6274 94.6274 31 88 31L 12 31C 5.37258 31 0 25.6274 0 19L 0 12Z"/>
+<path id="path17_fill" d="M 0 4C 0 1.79086 1.79086 0 4 0L 107 0C 109.209 0 111 1.79086 111 4L 111 27C 111 29.2091 109.209 31 107 31L 4 31C 1.79086 31 0 29.2091 0 27L 0 4Z"/>
+<path id="path18_fill" d="M 0 4C 0 1.79086 1.79086 0 4 0L 146 0C 148.209 0 150 1.79086 150 4L 150 44C 150 46.2091 148.209 48 146 48L 4 48C 1.79086 48 0 46.2091 0 44L 0 4Z"/>
+<path id="path19_fill" d="M 0 4C 0 1.79086 1.79086 0 4 0L 75 0C 77.2091 0 79 1.79086 79 4L 79 17C 79 19.2091 77.2091 21 75 21L 4 21C 1.79086 21 0 19.2091 0 17L 0 4Z"/>
+<path id="path20_fill" d="M 0 4C 0 1.79086 1.79086 0 4 0L 89 0C 91.2091 0 93 1.79086 93 4L 93 22C 93 24.2091 91.2091 26 89 26L 4 26C 1.79086 26 0 24.2091 0 22L 0 4Z"/>
+<path id="path21_fill" d="M 0 50C 0 22.3858 22.3858 0 50 0C 77.6142 0 100 22.3858 100 50C 100 77.6142 77.6142 100 50 100C 22.3858 100 0 77.6142 0 50Z"/>
+<path id="path22_fill" d="M 0 30C 0 13.4315 13.4315 0 30 0C 46.5685 0 60 13.4315 60 30C 60 46.5685 46.5685 60 30 60C 13.4315 60 0 46.5685 0 30Z"/>
+<path id="path23_fill" d="M 0 0L 114 0C 116.209 0 118 1.79086 118 4L 118 75C 118 77.2091 116.209 79 114 79L 0 79L 0 0Z"/>
+<path id="path24_fill" d="M 0 4C 0 1.79086 1.79086 0 4 0L 329 0L 329 79L 3.99999 79C 1.79085 79 0 77.2091 0 75L 0 4Z"/>
+<path id="path25_fill" d="M 0 2C 0 0.89543 0.895431 0 2 0L 88 0C 89.1046 0 90 0.895431 90 2L 90 28C 90 29.1046 89.1046 30 88 30L 2 30C 0.89543 30 0 29.1046 0 28L 0 2Z"/>
+<path id="path26_fill" d="M 0 2C 0 0.89543 0.895431 0 2 0L 37 0C 38.1046 0 39 0.895431 39 2L 39 28C 39 29.1046 38.1046 30 37 30L 2 30C 0.89543 30 0 29.1046 0 28L 0 2Z"/>
+<path id="path27_fill" d="M 0 0L 612 0L 612 2L 0 2L 0 0Z"/>
+<path id="path28_fill" d="M 0 18C 0 8.05888 8.05887 0 18 0L 93 0C 102.941 0 111 8.05888 111 18L 111 30C 111 39.9411 102.941 48 93 48L 18 48C 8.05888 48 0 39.9411 0 30L 0 18Z"/>
+<path id="path29_fill" d="M 0 0L 153 0L 153 48L 0 48L 0 0Z"/>
+<path id="path30_fill" d="M 0 18C 0 8.05888 8.05888 0 18 0L 83 0C 92.9411 0 101 8.05888 101 18C 101 27.9411 92.9411 36 83 36L 18 36C 8.05888 36 0 27.9411 0 18Z"/>
+<path id="path31_fill" d="M 0 18C 0 8.05888 8.05887 0 18 0L 94 0C 103.941 0 112 8.05888 112 18C 112 27.9411 103.941 36 94 36L 18 36C 8.05887 36 0 27.9411 0 18Z"/>
+<path id="path32_fill" d="M 0 18C 0 8.05888 8.05888 0 18 0L 64 0C 73.9411 0 82 8.05888 82 18C 82 27.9411 73.9411 36 64 36L 18 36C 8.05888 36 0 27.9411 0 18Z"/>
+<path id="path33_fill" d="M 0 18C 0 8.05888 8.05887 0 18 0L 109 0C 118.941 0 127 8.05888 127 18C 127 27.9411 118.941 36 109 36L 18 36C 8.05887 36 0 27.9411 0 18Z"/>
+<path id="path34_fill" d="M 0 18C 0 8.05888 8.05888 0 18 0L 104 0C 113.941 0 122 8.05888 122 18C 122 27.9411 113.941 36 104 36L 18 36C 8.05888 36 0 27.9411 0 18Z"/>
+<path id="path35_fill" d="M 0 18C 0 8.05888 8.05887 0 18 0L 93 0C 102.941 0 111 8.05888 111 18C 111 27.9411 102.941 36 93 36L 18 36C 8.05888 36 0 27.9411 0 18Z"/>
+<path id="path36_fill" d="M 0 18C 0 8.05888 8.05888 0 18 0L 67 0C 76.9411 0 85 8.05888 85 18C 85 27.9411 76.9411 36 67 36L 18 36C 8.05887 36 0 27.9411 0 18Z"/>
+<path id="path37_fill" d="M 0 18C 0 8.05888 8.05888 0 18 0L 84 0C 93.9411 0 102 8.05888 102 18C 102 27.9411 93.9411 36 84 36L 18 36C 8.05887 36 0 27.9411 0 18Z"/>
+<path id="path38_fill" fill-rule="evenodd" d="M 0 0L 1024 0L 1024 292L 0 292L 0 0Z"/>
+<path id="path39_fill" d="M 0 12C 0 5.37258 5.37258 0 12 0L 138 0C 144.627 0 150 5.37258 150 12L 150 138C 150 144.627 144.627 150 138 150L 12 150C 5.37258 150 0 144.627 0 138L 0 12Z"/>
+<path id="path40_fill" d="M 0 0L 167 0L 167 31L 0 31L 0 0Z"/>
+<path id="path41_fill" d="M 0 0L 111 0L 111 31L 0 31L 0 0Z"/>
+<path id="path42_fill" d="M 0 0L 375 0L 375 79L 0 79L 0 0Z"/>
+<path id="path43_fill" d="M 0 0L 111 0L 111 41L 0 41L 0 0Z"/>
+<path id="path44_fill" d="M 0 12C 0 5.37258 5.37258 0 12 0L 96 0C 102.627 0 108 5.37258 108 12L 108 19C 108 25.6274 102.627 31 96 31L 12 31C 5.37258 31 0 25.6274 0 19L 0 12Z"/>
+<path id="path45_fill" d="M 0 12C 0 5.37258 5.37258 0 12 0L 69 0C 75.6274 0 81 5.37258 81 12L 81 19C 81 25.6274 75.6274 31 69 31L 12 31C 5.37258 31 0 25.6274 0 19L 0 12Z"/>
+<path id="path46_fill" d="M 0 12C 0 5.37258 5.37258 0 12 0L 99 0C 105.627 0 111 5.37258 111 12L 111 19C 111 25.6274 105.627 31 99 31L 12 31C 5.37258 31 0 25.6274 0 19L 0 12Z"/>
+<path id="path47_fill" d="M 0 12C 0 5.37258 5.37258 0 12 0L 141 0C 147.627 0 153 5.37258 153 12L 153 19C 153 25.6274 147.627 31 141 31L 12 31C 5.37258 31 0 25.6274 0 19L 0 12Z"/>
+<path id="path48_fill" d="M 0 12C 0 5.37258 5.37258 0 12 0L 148 0C 154.627 0 160 5.37258 160 12L 160 148C 160 154.627 154.627 160 148 160L 12 160C 5.37258 160 0 154.627 0 148L 0 12Z"/>
+<path id="path49_fill" d="M 0 0L 87.608 0C 89.8171 0 91.608 1.79086 91.608 4L 91.608 75C 91.608 77.2091 89.8171 79 87.608 79L 0 79L 0 0Z"/>
+<path id="path50_fill" d="M 0 4C 0 1.79086 1.79086 0 4 0L 255.392 0L 255.392 79L 4 79C 1.79086 79 0 77.2091 0 75L 0 4Z"/>
+<path id="path51_fill" d="M 0 2C 0 0.89543 0.895431 0 2 0L 68 0C 69.1046 0 70 0.895431 70 2L 70 28C 70 29.1046 69.1046 30 68 30L 2 30C 0.89543 30 0 29.1046 0 28L 0 2Z"/>
+<path id="path52_fill" d="M 0 2C 0 0.89543 0.895431 0 2 0L 28 0C 29.1046 0 30 0.895431 30 2L 30 28C 30 29.1046 29.1046 30 28 30L 2 30C 0.89543 30 0 29.1046 0 28L 0 2Z"/>
+<path id="path53_fill" d="M 0 0L 375 0L 375 166L 0 166L 0 0Z"/>
+<path id="path54_fill" d="M 0 4C 0 1.79086 1.79086 0 4 0L 146 0C 148.209 0 150 1.79086 150 4L 150 146C 150 148.209 148.209 150 146 150L 4 150C 1.79086 150 0 148.209 0 146L 0 4Z"/>
+<path id="path55_fill" d="M 0 4C 0 1.79086 1.79086 0 4 0L 155 0C 157.209 0 159 1.79086 159 4L 159 29C 159 31.2091 157.209 33 155 33L 4 33C 1.79086 33 0 31.2091 0 29L 0 4Z"/>
+<path id="path56_fill" d="M 0 4C 0 1.79086 1.79086 0 4 0L 196 0C 198.209 0 200 1.79086 200 4L 200 71C 200 73.2091 198.209 75 196 75L 4 75C 1.79086 75 0 73.2091 0 71L 0 4Z"/>
+<path id="path57_fill" d="M 0 4C 0 1.79086 1.79086 0 4 0L 196 0C 198.209 0 200 1.79086 200 4L 200 27C 200 29.2091 198.209 31 196 31L 4 31C 1.79086 31 0 29.2091 0 27L 0 4Z"/>
+<path id="path58_fill" d="M 0 4C 0 1.79086 1.79086 0 4 0L 234 0C 236.209 0 238 1.79086 238 4L 238 27C 238 29.2091 236.209 31 234 31L 4 31C 1.79086 31 0 29.2091 0 27L 0 4Z"/>
+</defs>
+</svg>
