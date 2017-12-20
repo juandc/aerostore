@@ -6,13 +6,12 @@ module.exports = {
       config.plugins.push(
         new SWPrecacheWebpackPlugin({
           verbose: true,
+          minify: true,
           staticFileGlobsIgnorePatterns: [/\.next\//],
-          runtimeCaching: [
-            {
-              handler: 'networkFirst',
-              urlPattern: /^https.*/
-            }
-          ]
+          runtimeCaching: [{
+            handler: 'networkFirst',
+            urlPattern: /^https.*/
+          }]
         })
       )
     }

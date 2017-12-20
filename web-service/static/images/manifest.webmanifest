@@ -1,0 +1,21 @@
+{
+  "name": "Aerostore",
+  "short_name": "aerostore",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f0f0f0",
+  "theme_color": "#ff6600",
+  "description": "A simple store, for simple people.",
+  "icons": [
+    {
+      "src": "/static/icon@192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/static/icon@512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

@@ -1,9 +1,10 @@
 import 'isomorphic-fetch'
 import Layout from '../components/Layout'
 import Product from '../components/Product'
+import { useShallowEqual } from 'shouldcomponentupdate-children'
 
 
-export default class History extends React.Component {
+class History extends React.Component {
   static async getInitialProps({ req, res, query }) {
     const baseUrl = 'https://aerostore-api.now.sh'
     const page = parseInt(query.page || 0)
@@ -54,10 +55,30 @@ export default class History extends React.Component {
             overflow-x: scroll;
             flex-wrap: wrap;
             width: auto;
+
+            & > :global(.Product) {
+              height: 48%;
+              max-height: 200px;
+              max-width: 200px;
+              width: 178px;
+              width: 48%;
+            }
+
+            @media screen and (max-width: 600px) {
+              & > :global(.Product:nth-child(odd)) {
+                margin-left: 0;
+              }
+              & > :global(.Product:nth-child(even)) {
+                margin-right: 0;
+              }
+            }
           }
         `}</style>
       </Layout>
     )
   }
 }
+
+
+export default useShallowEqual(History)
 

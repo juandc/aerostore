@@ -1,4 +1,6 @@
-export default class Modal extends React.Component {
+import { useShallowEqual } from 'shouldcomponentupdate-children'
+
+class Modal extends React.Component {
   state = { isOpen: false }
 
   toggleModal = () => {
@@ -8,18 +10,22 @@ export default class Modal extends React.Component {
   }
 
   renderModal = ({ isOpen, render, buttons = {} }) => (
-    <article className={isOpen && 'active'}>
+    <article className={`Modal ${isOpen && 'active'}`}>
       {render}
       <footer>
-        <button
+        <a
           className="btn btn-blue"
           onClick={() => {
-            buttons.action
-              && buttons.action()
+            buttons.action && buttons.action()
             this.toggleModal()
           }}
-        >Ok</button>
+        >Ok</a>
       </footer>
+      <style jsx global>{`
+        *:not(.Modal) {
+          overflow-y: ${this.state.isOpen ? 'hidden' : 'unset'} !important;
+        }
+      `}</style>
       <style jsx>{`
         article {
           background-color: var(--bgSecondColor);
@@ -31,15 +37,14 @@ export default class Modal extends React.Component {
           position: fixed;
           right: 0;
           top: 61px;
-          width: 100vw;
           transition: all .3s, padding .1s, height .6s;
+          width: 100vw;
           z-index: 1;
 
           @media screen and (min-width: 1024px) {
-            left: unset;
             bottom: unset;
+            left: unset;
             width: 400px;
-
           }
 
           & > :global(*) {
@@ -52,9 +57,7 @@ export default class Modal extends React.Component {
             height: calc(100vh - 61px);
             padding: 24px var(--padding) 0;
 
-            @media screen and (min-width: 1024px) {
-              height: 482px;
-            }
+            @media screen and (min-width: 1024px) { height: 482px; }
 
             & > :global(*) {
               opacity: 1;
@@ -67,13 +70,13 @@ export default class Modal extends React.Component {
         footer {
           align-items: center;
           background-color: var(--bgColor);
+          bottom: 0;
           box-shadow: 0px -2px 24px var(--boxShadow);
           display: flex;
-          justify-content: ${buttons.position || 'center'};
           height: 61px;
-          position: absolute;
-          bottom: 0;
+          justify-content: center;
           left: 0;
+          position: absolute;
           right: 0;
 
           @media screen and (min-width: 1024px) {
@@ -81,10 +84,11 @@ export default class Modal extends React.Component {
           }
         }
 
+        @media screen and (max-width: 1024px) {
+          article { overflow-y: scroll; }
+        }
+
         @media screen and (max-width: 1024px) and (orientation: landscape) {
-          article {
-            overflow-y: scroll;
-          }
           footer {
             position: relative;
             margin: 0;
@@ -118,3 +122,7 @@ export default class Modal extends React.Component {
     )
   }
 }
+
+
+export default useShallowEqual(Modal)
+

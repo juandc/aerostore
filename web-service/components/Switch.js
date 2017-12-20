@@ -1,40 +1,49 @@
-export default ({ isActive, ...props }) => (
-  <React.Fragment>
-    <button
-      className={isActive && 'active'}
-      {...props}
-    />
-    <style jsx>{`
-      button {
-        background-color: #ededed;
-        border-radius: 30px;
-        border: none;
-        cursor: pointer;
-        height: 30px;
-        position: relative;
-        outline: none;
-        width: 60px;
+import { useShallowEqual } from 'shouldcomponentupdate-children'
 
-        &:after {
-          content: '';
-          background-color: #EB5757;
-          border-radius: inherit;
-          position: absolute;
-          height: inherit;
-          width: 30px;
-          top: 0;
-          left: 0;
-          transition: left .6s, width .6s;
-        }
 
-        &:active:after { width: 37.5px; }
-        &.active:active:after { left: calc(100% - 37.5px); }
+class Switch extends React.Component {
+  render() {
+    const { isActive, ...props } = this.props
 
-        &.active:after {
-          background-color: lightgreen;
-          left: calc(100% - 30px);
-        }
-      }
-    `}</style>
-  </React.Fragment>
-)
+    return (
+      <React.Fragment>
+        <a className={isActive && 'active'} {...props} />
+        <style jsx>{`
+          a {
+            background-color: #ededed;
+            border-radius: 30px;
+            border: none;
+            cursor: pointer;
+            height: 30px;
+            position: relative;
+            outline: none;
+            width: 60px;
+
+            &::after {
+              background-color: #EB5757;
+              border-radius: inherit;
+              content: '';
+              height: inherit;
+              left: 0;
+              position: absolute;
+              top: 0;
+              transition: left .6s, width .6s;
+              width: 30px;
+            }
+
+            &:active:after { width: 37.5px; }
+            &.active:active:after { left: calc(100% - 37.5px); }
+
+            &.active:after {
+              background-color: lightgreen;
+              left: calc(100% - 30px);
+            }
+          }
+        `}</style>
+      </React.Fragment>
+    )
+  }
+}
+
+
+export default useShallowEqual(Switch)

@@ -1,9 +1,8 @@
+import { useShallowEqual } from 'shouldcomponentupdate-children'
 import Router from 'next/router'
 
-export default class Loader extends React.PureComponent {
-  state = {
-    className: 'loaded'
-  }
+class Loader extends React.PureComponent {
+  state = { className: 'loaded' }
 
   componentDidMount() {
     Router.onRouteChangeStart = () =>{
@@ -61,3 +60,7 @@ export default class Loader extends React.PureComponent {
     )
   }
 }
+
+
+export default useShallowEqual(Loader)
+

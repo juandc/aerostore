@@ -1,10 +1,11 @@
 import 'isomorphic-fetch'
-import Layout from '../components/Layout'
+import { useShallowEqual } from 'shouldcomponentupdate-children'
 import Product from '../components/Product'
+import Layout from '../components/Layout'
 import Link from 'next/link'
 
 
-export default class Home extends React.PureComponent {
+class Home extends React.Component {
   state = {
     products: null,
     products2: null,
@@ -18,16 +19,16 @@ export default class Home extends React.PureComponent {
   requestData = async () => {
     const baseUrl = 'https://aerostore-api.now.sh'
 
-    let userProfile = await fetch(`${baseUrl}/user/profile`)
-    userProfile = await userProfile.json()
-
     let products = await fetch(`${baseUrl}/categories/Electronics?page=0&perPage=5`)
     products = await products.json()
 
     let products2 = await fetch(`${baseUrl}/categories/Electronics?page=0&perPage=5&sortBy=lowest`)
     products2 = await products2.json()
 
-    this.setState({ userProfile, products, products2 })
+    let userProfile = await fetch(`${baseUrl}/user/profile`)
+    userProfile = await userProfile.json()
+
+    this.setState({ products, products2, userProfile })
   }
 
   registerServiceWorker = () => {
@@ -67,9 +68,7 @@ export default class Home extends React.PureComponent {
             <p>A simple store, for the simple people.</p>
           </div>
 
-          <div className="mobile-preview">
-            <img src="/static/mobile-preview.png" alt="hay mama" />
-          </div>
+          <div className="mobile-preview" />
         </header>
         
         <section>
@@ -90,13 +89,16 @@ export default class Home extends React.PureComponent {
         
         <section>
           <h2>Other</h2>
-          <Link href={`/shop?category=Other&sortBy=lowest`} prefetch>
+          <Link href={`/shop?category=Other&sortBy=lowest`}>
             <a className="btn btn-small btn-blue">SEE MORE</a>
           </Link>
           <article>
             {products2 && products2.map(({ id, ...product }) =>
-              <Product key={id} {...product} userPoints={1000} />
-              // <Product key={id} {...product} userPoints={userProfile.points} />
+              <Product
+                key={id}
+                {...product}
+                userPoints={1000}
+              />
             )}
           </article>
         </section>
@@ -116,7 +118,7 @@ export default class Home extends React.PureComponent {
               margin: 0;
               height: 74px;
               line-height: 74px;
-              font-weight: semibold;
+              font-weight: bold;
             }
 
             p {
@@ -140,10 +142,11 @@ export default class Home extends React.PureComponent {
               }
 
               .mobile-preview {
+                background-image: url(/static/images/mobile-preview.webp);
                 display: block;
+                height: 462px;
                 margin-left: 100px;
-
-                img { width: 300px; }
+                width: 300px;
               }
             }
           }
@@ -154,20 +157,21 @@ export default class Home extends React.PureComponent {
             max-width: 900px;
             color: var(--darkGray);
 
+            @media screen and (min-width: 1366px) {
+              max-width: 1048px;
+            }
+            
             @media screen and (min-width: 1024px) {
               margin: 125px auto 100px;
             }
 
-            h2 { font-size: 26px; font-weight: 400; }
+            h2 { font-size: 28px; font-weight: 400; }
+
             .btn {
               position: absolute;
               right: 0;
               top: 0;
               margin: 0;
-            }
-
-            @media screen and (min-width: 1366px) {
-              max-width: 1048px;
             }
           }
 
@@ -204,4 +208,7 @@ export default class Home extends React.PureComponent {
     )
   }
 }
+
+
+export default useShallowEqual(Home)
 
