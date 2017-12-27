@@ -25,7 +25,8 @@ app.prepare()
   })
   .listen(port, (err) => {
     if (err) throw err
-    console.log(`> Ready on http://localhost:${port}`)
+    dev && console.log(`> Ready on http://localhost:${port}`)
+    !dev && console.log(`> Ready on https://aerostore.now.sh`)
   })
 })
 

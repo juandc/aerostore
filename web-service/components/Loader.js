@@ -1,7 +1,7 @@
-import { useShallowEqual } from 'shouldcomponentupdate-children'
+// import { useShallowEqual } from 'shouldcomponentupdate-children'
 import Router from 'next/router'
 
-class Loader extends React.PureComponent {
+class Loader extends React.Component {
   state = { className: 'loaded' }
 
   componentDidMount() {
@@ -62,5 +62,6 @@ class Loader extends React.PureComponent {
 }
 
 
-export default useShallowEqual(Loader)
+export default Loader
+// export default useShallowEqual(Loader)
 

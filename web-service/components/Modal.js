@@ -12,6 +12,7 @@ class Modal extends React.Component {
   renderModal = ({ isOpen, render, buttons = {} }) => (
     <article className={`Modal ${isOpen && 'active'}`}>
       {render}
+
       <footer>
         <a
           className="btn btn-blue"
@@ -21,11 +22,7 @@ class Modal extends React.Component {
           }}
         >Ok</a>
       </footer>
-      <style jsx global>{`
-        *:not(.Modal) {
-          overflow-y: ${this.state.isOpen ? 'hidden' : 'unset'} !important;
-        }
-      `}</style>
+      
       <style jsx>{`
         article {
           background-color: var(--bgSecondColor);
@@ -55,7 +52,7 @@ class Modal extends React.Component {
           
           &.active {
             height: calc(100vh - 61px);
-            padding: 24px var(--padding) 0;
+            padding: 24px var(--padding) 61px;
 
             @media screen and (min-width: 1024px) { height: 482px; }
 
@@ -76,7 +73,7 @@ class Modal extends React.Component {
           height: 61px;
           justify-content: center;
           left: 0;
-          position: absolute;
+          position: fixed;
           right: 0;
 
           @media screen and (min-width: 1024px) {
@@ -87,16 +84,10 @@ class Modal extends React.Component {
         @media screen and (max-width: 1024px) {
           article { overflow-y: scroll; }
         }
-
-        @media screen and (max-width: 1024px) and (orientation: landscape) {
-          footer {
-            position: relative;
-            margin: 0;
-            left: -14px;
-            right: -14px;
-            width: 100vw;
-            bottom: -14px;
-          }
+      `}</style>
+      <style jsx global>{`
+        *:not(.Modal) {
+          overflow-y: ${this.state.isOpen ? 'hidden' : 'unset'} !important;
         }
       `}</style>
     </article>

@@ -1,7 +1,7 @@
 import Router from 'next/router'
 
 
-class Error extends React.PureComponent {
+class Error extends React.Component {
   state = { ishover: false }
 
   static getInitialProps({ res, err }) {
