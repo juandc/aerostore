@@ -1,5 +1,5 @@
 # AeroStore
-AeroStore - Aerolab Challenge ([demo](https://aerostore.now.sh))
+Second place in the aerolab challenge! [Take a look](https://twitter.com/aerolab/status/946100876942262272) - [Aerolab Challenge](https://aerolab.co/coding-challenge) ([demo](https://aerostore.now.sh))
 
 
 ## About
