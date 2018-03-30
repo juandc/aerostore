@@ -15,7 +15,7 @@
     "apollo-client": "^2.0.4",
     "apollo-link-http": "^1.3.2",
     "graphql-tag": "^2.6.1",
-    "next": "4.2.0",
+    "next": "4.2.3",
     "next-apollo": "^1.0.4",
     "postcss-nested": "^3.0.0",
     "react": "^16.2.0",
