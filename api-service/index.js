@@ -1,19 +1,15 @@
-'use strict'
-
-const cors = require('micro-cors')
-const { router, get, post } = require('microrouter')
-const { microGraphql, microGraphiql } = require('graphql-server-micro')
-const executableSchema = require('./schema')
-
+const cors = require('micro-cors');
+const { router, get, post } = require('microrouter');
+const { microGraphql, microGraphiql } = require('graphql-server-micro');
+const executableSchema = require('./schema');
 
 const handler = router(
-  get('/api/graphiql', (req, res) =>
-    microGraphiql({ endpointURL: '/api/graphql' })(req, res)
-  ),
-  post('/api/graphql', (req, res) =>
-    microGraphql({ schema: executableSchema })(req, res)
-  )
-)
+  get('/api/graphiql', microGraphiql({
+    endpointURL: '/api/graphql',
+  })),
+  post('/api/graphql', microGraphql({
+    schema: executableSchema,
+  })),
+);
 
-
-module.exports = cors({ allowMethods: ['GET', 'POST'] })(handler)
+module.exports = cors({ allowMethods: ['GET', 'POST'] })(handler);

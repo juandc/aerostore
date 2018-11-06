@@ -1,6 +1,4 @@
-'use strict'
-
-const queries = `
+module.exports = `
   input ProductFilters {
     categories: String
     name: String
@@ -37,7 +35,4 @@ const queries = `
     products: Products!
     user: User!
   }
-`
-
-
-module.exports = queries
+`;
