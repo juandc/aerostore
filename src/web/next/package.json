@@ -1,0 +1,17 @@
+{
+  "name": "@aerostore/next",
+  "version": "0.1.0",
+  "description": "Web client using Reactjs, Nextjs and PostCSS.",
+  "main": "server.js",
+  "scripts": {
+    "start": "next"
+  },
+  "author": "Juan David Castro (@juandc) <me@juandc.co>",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "next": "^7.0.2",
+    "react": "^16.6.0",
+    "react-dom": "^16.6.0"
+  }
+}
