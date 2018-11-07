@@ -1,7 +1,7 @@
 {
   "name": "@aerostore/next",
   "version": "0.1.0",
-  "description": "Web client using Reactjs, Nextjs and PostCSS.",
+  "description": "Web client using Nextjs and PostCSS",
   "main": "server.js",
   "scripts": {
     "start": "next"
@@ -11,7 +11,15 @@
   "private": false,
   "dependencies": {
     "next": "^7.0.2",
+    "postcss-combine-duplicated-selectors": "^6.1.0",
+    "postcss-custom-media": "^7.0.7",
+    "postcss-custom-selectors": "^5.1.2",
+    "postcss-nesting": "^7.0.0",
+    "postcss-selector-matches": "^4.0.0",
+    "postcss-selector-not": "^4.0.0",
     "react": "^16.6.0",
-    "react-dom": "^16.6.0"
+    "react-dom": "^16.6.0",
+    "styled-jsx": "^3.1.1",
+    "styled-jsx-plugin-postcss": "^2.0.0"
   }
 }
