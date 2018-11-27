@@ -1,6 +1,8 @@
 # AeroStore
 Second place in the aerolab challenge! [Take a look](https://twitter.com/aerolab/status/946100876942262272) - [Aerolab Challenge](https://aerolab.co/coding-challenge) ([demo](https://aerostore.now.sh))
 
+This project is being redesigned, rebuilt, recooled and refreshed using almost all knowledges I learned this year :grimacing:. Design and coding :art::computer:. New Platzi courses :green_heart:. New trends and good practices in web development :+1::tada:. Just wait for it :wink:.
+
 
 ## About
 The challenge is to build a catalog view for a loyalty program app.
